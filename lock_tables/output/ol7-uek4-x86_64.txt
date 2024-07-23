@@ -1,0 +1,547 @@
+--> 4.1.12-124.42.3.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+--> 4.1.12-124.42.4.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+2043	__mutex_lock_killable_slowpath	1 stacks
+2057	__mutex_lock_killable_slowpath	1 stacks
+4091	__mutex_lock_killable_slowpath	1 stacks
+4105	__mutex_lock_killable_slowpath	1 stacks
+6139	__mutex_lock_slowpath	1 stacks
+6153	__mutex_lock_slowpath	1 stacks
+36859	__mutex_lock_slowpath	1 stacks
+36873	__mutex_lock_slowpath	1 stacks
+685205	__mutex_lock_slowpath	1 stacks
+1161211	__mutex_lock_slowpath	1 stacks
+1161225	__mutex_lock_slowpath	1 stacks
+1163259	__mutex_lock_slowpath	1 stacks
+1163273	__mutex_lock_slowpath	1 stacks
+1165307	__mutex_lock_slowpath	1 stacks
+1165321	__mutex_lock_slowpath	1 stacks
+648341	__mutex_lock_killable_slowpath	1 stacks
+1124347	__mutex_lock_killable_slowpath	1 stacks
+1124361	__mutex_lock_killable_slowpath	1 stacks
+1126395	__mutex_lock_killable_slowpath	1 stacks
+1126409	__mutex_lock_killable_slowpath	1 stacks
+1128443	__mutex_lock_killable_slowpath	1 stacks
+1128457	__mutex_lock_killable_slowpath	1 stacks
+2043	__mutex_lock_interruptible_slowpath	1 stacks
+2057	__mutex_lock_interruptible_slowpath	1 stacks
+30715	__mutex_lock_slowpath	1 stacks
+30729	__mutex_lock_slowpath	1 stacks
+679061	__mutex_lock_slowpath	1 stacks
+1155067	__mutex_lock_slowpath	1 stacks
+1155081	__mutex_lock_slowpath	1 stacks
+1157115	__mutex_lock_slowpath	1 stacks
+1157129	__mutex_lock_slowpath	1 stacks
+1159163	__mutex_lock_slowpath	1 stacks
+1159177	__mutex_lock_slowpath	1 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+2042	__down_common	3 stacks
+2057	__down_common	3 stacks
+2023	__down_common	2 stacks
+4090	__down_common	2 stacks
+4105	__down_common	2 stacks
+4071	__down_common	1 stacks
+6138	__down_common	1 stacks
+6153	__down_common	1 stacks
+   -> rwsem (saw 4 stacks)
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+2042	rwsem_down_read_failed	1 stacks
+2056	rwsem_down_read_failed	1 stacks
+2069	rwsem_down_read_failed	1 stacks
+4090	rwsem_down_read_failed	1 stacks
+4104	rwsem_down_read_failed	1 stacks
+4117	rwsem_down_read_failed	1 stacks
+6134	rwsem_down_read_failed	1 stacks
+6140	rwsem_down_read_failed	1 stacks
+6152	rwsem_down_read_failed	1 stacks
+6165	rwsem_down_read_failed	1 stacks
+8186	rwsem_down_read_failed	1 stacks
+8200	rwsem_down_read_failed	1 stacks
+8213	rwsem_down_read_failed	1 stacks
+10234	rwsem_down_read_failed	1 stacks
+10248	rwsem_down_read_failed	1 stacks
+10261	rwsem_down_read_failed	1 stacks
+2045	rwsem_down_write_failed	1 stacks
+2059	rwsem_down_write_failed	1 stacks
+2072	rwsem_down_write_failed	1 stacks
+--> 4.1.12-124.43.4.el7uek.x86_64
+Traceback (most recent call last):
+  File "/usr/bin/drgn", line 11, in <module>
+    load_entry_point('drgn==0.0.27', 'console_scripts', 'drgn')()
+  File "/usr/lib64/python3.6/site-packages/drgn/cli.py", line 352, in _main
+    runpy.run_path(script, init_globals={"prog": prog}, run_name="__main__")
+  File "/usr/lib64/python3.6/runpy.py", line 263, in run_path
+    pkg_name=pkg_name, script_name=fname)
+  File "/usr/lib64/python3.6/runpy.py", line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File "/usr/lib64/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "generate_lock_tables.py", line 129, in <module>
+    main(prog)  # noqa
+  File "generate_lock_tables.py", line 111, in main
+    res = functions[kind](task)
+  File "generate_lock_tables.py", line 69, in find_offsets
+    stack_word = prog.read_u64(sp)
+_drgn.FaultError: could not find physical memory segment: 0xbe423000
+--> 4.1.12-124.70.2.el7uek.x86_64
+Could not find mutex in stack
+Seeking: ffffffffc07090a0 from ffff880233ddbde8 to ffff8802304db050
+STACK POINTER     VALUE
+[stack frame #0 at 0xffffffff8175a2a7 (schedule+0x37/0x90)]
+Traceback (most recent call last):
+  File "/usr/bin/drgn", line 11, in <module>
+    load_entry_point('drgn==0.0.27', 'console_scripts', 'drgn')()
+  File "/usr/lib64/python3.6/site-packages/drgn/cli.py", line 352, in _main
+    runpy.run_path(script, init_globals={"prog": prog}, run_name="__main__")
+  File "/usr/lib64/python3.6/runpy.py", line 263, in run_path
+    pkg_name=pkg_name, script_name=fname)
+  File "/usr/lib64/python3.6/runpy.py", line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File "/usr/lib64/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "generate_lock_tables.py", line 129, in <module>
+    main(prog)  # noqa
+  File "generate_lock_tables.py", line 111, in main
+    res = functions[kind](task)
+  File "generate_lock_tables.py", line 75, in find_offsets
+    print_annotated_stack(trace)
+  File "/usr/lib64/python3.6/site-packages/drgn/helpers/common/stack.py", line 132, in print_annotated_stack
+    identified = identify_address(prog, word_val, cache=cache)
+  File "/usr/lib64/python3.6/site-packages/drgn/helpers/common/prog.py", line 111, in wrapper
+    return f(*args, **kwds)
+  File "/usr/lib64/python3.6/site-packages/drgn/helpers/common/memory.py", line 198, in identify_address
+    return _identify_kernel_address(prog, addr, cache)
+  File "/usr/lib64/python3.6/site-packages/drgn/helpers/common/memory.py", line 132, in _identify_kernel_address
+    slab_info = _get_slab_cache_helper(slab.slab_cache).object_info(
+AttributeError: 'struct slab' has no member 'slab_cache'
+--> 4.1.12-124.70.2.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+--> 4.1.12-124.71.3.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+--> 4.1.12-124.71.3.1.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+--> 4.1.12-124.72.2.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+--> 4.1.12-124.73.2.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+--> 4.1.12-124.74.2.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+--> 4.1.12-124.75.3.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+--> 4.1.12-124.76.2.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+--> 4.1.12-124.77.2.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+--> 4.1.12-124.78.2.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+--> 4.1.12-124.78.4.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+--> 4.1.12-124.78.4.1.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+--> 4.1.12-124.79.2.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+--> 4.1.12-124.80.1.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+--> 4.1.12-124.81.2.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+--> 4.1.12-124.82.2.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+--> 4.1.12-124.83.2.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+--> 4.1.12-124.84.2.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+--> 4.1.12-124.85.1.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+--> 4.1.12-124.86.1.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks
+--> 4.1.12-124.87.2.el7uek.x86_64
+   -> mutex (saw 6 stacks)
+-5	__mutex_lock_interruptible_slowpath	2 stacks
+9	__mutex_lock_interruptible_slowpath	2 stacks
+-5	__mutex_lock_killable_slowpath	2 stacks
+9	__mutex_lock_killable_slowpath	2 stacks
+-5	__mutex_lock_slowpath	2 stacks
+9	__mutex_lock_slowpath	2 stacks
+   -> sem (saw 4 stacks)
+-6	__down_common	4 stacks
+9	__down_common	4 stacks
+-25	__down_common	3 stacks
+   -> rwsem (saw 4 stacks)
+-3	rwsem_down_write_failed	2 stacks
+11	rwsem_down_write_failed	2 stacks
+24	rwsem_down_write_failed	2 stacks
+-4	rwsem_down_read_failed	2 stacks
+8	rwsem_down_read_failed	2 stacks
+21	rwsem_down_read_failed	2 stacks

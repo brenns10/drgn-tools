@@ -1,0 +1,13 @@
+# Copyright (c) 2024, Oracle and/or its affiliates.
+# Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl/
+*.cache
+*.cmd
+*.mod.c
+*.mod.o
+*.mod
+*.o
+*.ko
+modules.order
+.clangd
+Module.symvers
+compile_commands.json

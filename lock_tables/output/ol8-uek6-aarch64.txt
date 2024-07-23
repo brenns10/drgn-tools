@@ -1,0 +1,2452 @@
+--> 5.4.17-2011.1.2.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-16	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	1 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+-11	rwsem_down_write_slowpath	4 stacks
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2011.2.2.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-16	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	1 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+-11	rwsem_down_write_slowpath	4 stacks
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2011.3.2.1.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-16	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	1 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+-11	rwsem_down_write_slowpath	4 stacks
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2011.4.4.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-16	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	1 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+-11	rwsem_down_write_slowpath	4 stacks
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2011.4.5.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-16	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	1 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+-11	rwsem_down_write_slowpath	4 stacks
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2011.4.6.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-16	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	1 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+-11	rwsem_down_write_slowpath	4 stacks
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2011.5.3.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-16	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	1 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+-11	rwsem_down_write_slowpath	4 stacks
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2011.6.2.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-16	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	1 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+-11	rwsem_down_write_slowpath	4 stacks
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2011.7.4.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-16	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	1 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+-11	rwsem_down_write_slowpath	4 stacks
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2036.100.6.1.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-14	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	1 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+error: not an ELF core file
+[Errno 2] No such file or directory: 'RPM:'
+error: not an ELF core file
+error: not an ELF core file
+error: not an ELF core file
+error: not an ELF core file
+error: not an ELF core file
+--> 5.4.17-2136.300.7.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.301.1.2.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.301.1.3.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.301.1.4.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.302.6.1.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.302.7.2.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.302.7.2.1.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.302.7.2.2.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.302.7.2.3.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.304.4.1.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.304.4.2.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.304.4.3.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.304.4.4.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.304.4.5.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.305.5.3.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.305.5.4.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.305.5.5.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.306.1.3.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.307.3.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.307.3.1.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.307.3.2.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.307.3.4.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.307.3.5.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.307.3.6.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.308.7.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.308.9.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.309.4.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.309.5.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.309.5.1.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.310.7.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.310.7.1.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.311.6.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.311.6.1.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.312.3.4.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.313.6.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.314.6.2.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.314.6.3.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.315.5.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.315.5.8.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.316.7.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.317.5.3.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.317.5.5.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.318.7.1.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.318.7.2.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.319.1.2.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.319.1.3.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.319.1.4.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.320.7.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.320.7.1.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.321.4.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.321.4.1.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.322.6.2.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.322.6.3.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.322.6.4.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.322.6.5.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.323.8.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.323.8.1.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+20	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+24	__mutex_lock.isra.9	4 stacks
+29	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-20	__down	1 stacks
+2	__down	1 stacks
+21	__down	1 stacks
+-20	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+20	__down_interruptible	1 stacks
+-20	__down_killable	1 stacks
+2	__down_killable	1 stacks
+20	__down_killable	1 stacks
+-20	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+20	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-2	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+26	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.323.8.2.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+14	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+18	__mutex_lock.isra.9	4 stacks
+23	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-14	__down	1 stacks
+2	__down	1 stacks
+15	__down	1 stacks
+-14	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+14	__down_interruptible	1 stacks
+-14	__down_killable	1 stacks
+2	__down_killable	1 stacks
+14	__down_killable	1 stacks
+-14	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+14	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-12	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.324.5.2.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+14	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+18	__mutex_lock.isra.9	4 stacks
+23	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-14	__down	1 stacks
+2	__down	1 stacks
+15	__down	1 stacks
+-14	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+14	__down_interruptible	1 stacks
+-14	__down_killable	1 stacks
+2	__down_killable	1 stacks
+14	__down_killable	1 stacks
+-14	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+14	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-12	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.324.5.3.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+14	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+18	__mutex_lock.isra.9	4 stacks
+23	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-14	__down	1 stacks
+2	__down	1 stacks
+15	__down	1 stacks
+-14	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+14	__down_interruptible	1 stacks
+-14	__down_killable	1 stacks
+2	__down_killable	1 stacks
+14	__down_killable	1 stacks
+-14	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+14	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-12	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.325.5.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+14	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+18	__mutex_lock.isra.9	4 stacks
+23	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-14	__down	1 stacks
+2	__down	1 stacks
+15	__down	1 stacks
+-14	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+14	__down_interruptible	1 stacks
+-14	__down_killable	1 stacks
+2	__down_killable	1 stacks
+14	__down_killable	1 stacks
+-14	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+14	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-12	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.325.5.1.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+14	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+18	__mutex_lock.isra.9	4 stacks
+23	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-14	__down	1 stacks
+2	__down	1 stacks
+15	__down	1 stacks
+-14	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+14	__down_interruptible	1 stacks
+-14	__down_killable	1 stacks
+2	__down_killable	1 stacks
+14	__down_killable	1 stacks
+-14	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+14	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-12	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.326.6.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+14	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+18	__mutex_lock.isra.9	4 stacks
+23	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-14	__down	1 stacks
+2	__down	1 stacks
+15	__down	1 stacks
+-14	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+14	__down_interruptible	1 stacks
+-14	__down_killable	1 stacks
+2	__down_killable	1 stacks
+14	__down_killable	1 stacks
+-14	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+14	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-12	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.326.6.1.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+14	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+18	__mutex_lock.isra.9	4 stacks
+23	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-14	__down	1 stacks
+2	__down	1 stacks
+15	__down	1 stacks
+-14	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+14	__down_interruptible	1 stacks
+-14	__down_killable	1 stacks
+2	__down_killable	1 stacks
+14	__down_killable	1 stacks
+-14	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+14	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-12	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.327.2.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+14	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+18	__mutex_lock.isra.9	4 stacks
+23	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-14	__down	1 stacks
+2	__down	1 stacks
+15	__down	1 stacks
+-14	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+14	__down_interruptible	1 stacks
+-14	__down_killable	1 stacks
+2	__down_killable	1 stacks
+14	__down_killable	1 stacks
+-14	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+14	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-12	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.328.3.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+14	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+18	__mutex_lock.isra.9	4 stacks
+23	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-14	__down	1 stacks
+2	__down	1 stacks
+15	__down	1 stacks
+-14	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+14	__down_interruptible	1 stacks
+-14	__down_killable	1 stacks
+2	__down_killable	1 stacks
+14	__down_killable	1 stacks
+-14	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+14	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-12	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.329.3.1.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+14	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+18	__mutex_lock.isra.9	4 stacks
+23	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-14	__down	1 stacks
+2	__down	1 stacks
+15	__down	1 stacks
+-14	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+14	__down_interruptible	1 stacks
+-14	__down_killable	1 stacks
+2	__down_killable	1 stacks
+14	__down_killable	1 stacks
+-14	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+14	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-12	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.329.3.2.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+14	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+18	__mutex_lock.isra.9	4 stacks
+23	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-14	__down	1 stacks
+2	__down	1 stacks
+15	__down	1 stacks
+-14	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+14	__down_interruptible	1 stacks
+-14	__down_killable	1 stacks
+2	__down_killable	1 stacks
+14	__down_killable	1 stacks
+-14	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+14	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-12	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.330.7.1.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+14	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+18	__mutex_lock.isra.9	4 stacks
+23	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-14	__down	1 stacks
+2	__down	1 stacks
+15	__down	1 stacks
+-14	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+14	__down_interruptible	1 stacks
+-14	__down_killable	1 stacks
+2	__down_killable	1 stacks
+14	__down_killable	1 stacks
+-14	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+14	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-12	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.330.7.4.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+14	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+18	__mutex_lock.isra.9	4 stacks
+23	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-14	__down	1 stacks
+2	__down	1 stacks
+15	__down	1 stacks
+-14	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+14	__down_interruptible	1 stacks
+-14	__down_killable	1 stacks
+2	__down_killable	1 stacks
+14	__down_killable	1 stacks
+-14	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+14	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-12	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.330.7.5.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+14	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+18	__mutex_lock.isra.9	4 stacks
+23	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-14	__down	1 stacks
+2	__down	1 stacks
+15	__down	1 stacks
+-14	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+14	__down_interruptible	1 stacks
+-14	__down_killable	1 stacks
+2	__down_killable	1 stacks
+14	__down_killable	1 stacks
+-14	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+14	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-12	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.331.7.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+14	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+18	__mutex_lock.isra.9	4 stacks
+23	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-14	__down	1 stacks
+2	__down	1 stacks
+15	__down	1 stacks
+-14	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+14	__down_interruptible	1 stacks
+-14	__down_killable	1 stacks
+2	__down_killable	1 stacks
+14	__down_killable	1 stacks
+-14	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+14	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-12	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.332.5.2.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+14	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+18	__mutex_lock.isra.9	4 stacks
+23	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-14	__down	1 stacks
+2	__down	1 stacks
+15	__down	1 stacks
+-14	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+14	__down_interruptible	1 stacks
+-14	__down_killable	1 stacks
+2	__down_killable	1 stacks
+14	__down_killable	1 stacks
+-14	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+14	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-12	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_read_slowpath	1 stacks
+--> 5.4.17-2136.333.5.el8uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.isra.9	8 stacks
+2	__mutex_lock.isra.9	8 stacks
+14	__mutex_lock.isra.9	8 stacks
+3	__mutex_lock.isra.9	4 stacks
+18	__mutex_lock.isra.9	4 stacks
+23	__mutex_lock.isra.9	2 stacks
+   -> sem (saw 4 stacks)
+-14	__down	1 stacks
+2	__down	1 stacks
+15	__down	1 stacks
+-14	__down_interruptible	1 stacks
+2	__down_interruptible	1 stacks
+14	__down_interruptible	1 stacks
+-14	__down_killable	1 stacks
+2	__down_killable	1 stacks
+14	__down_killable	1 stacks
+-14	__down_timeout	1 stacks
+2	__down_timeout	1 stacks
+14	__down_timeout	1 stacks
+   -> rwsem (saw 7 stacks)
+2	rwsem_down_write_slowpath	4 stacks
+-12	rwsem_down_read_slowpath	3 stacks
+2	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_read_slowpath	1 stacks

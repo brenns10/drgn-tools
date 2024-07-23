@@ -41,5 +41,8 @@ repos:
     rev: 0.1.1
     hooks:
     -   id: copyright-notice
-        exclude: man/.*\.\d.*
+        # 1. Exclude manual pages.
+        # 2. Exclude input/output files of the lock_tables section.
+        # 2. The lockmod has a copyright notice but it is in C comment syntax.
+        exclude: man/.*\.\d.*|lock_tables/(.*\.txt|lockmod/lockmod\.c|README\.md)
         args: [--notice=.header.txt]

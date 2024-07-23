@@ -1,0 +1,700 @@
+--> 5.15.0-208.159.3.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+12	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+13	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-10	__down_common	4 stacks
+2	__down_common	4 stacks
+14	__down_common	3 stacks
+15	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-13	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+12	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-207.156.6.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+12	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+13	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-10	__down_common	4 stacks
+2	__down_common	4 stacks
+14	__down_common	3 stacks
+15	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-13	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+12	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-206.153.7.1.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+12	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+13	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-10	__down_common	4 stacks
+2	__down_common	4 stacks
+14	__down_common	3 stacks
+15	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-13	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+12	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-206.153.7.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+12	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+13	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-10	__down_common	4 stacks
+2	__down_common	4 stacks
+14	__down_common	3 stacks
+15	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-13	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+12	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-205.149.5.4.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+12	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+13	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-10	__down_common	4 stacks
+2	__down_common	4 stacks
+14	__down_common	3 stacks
+15	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-13	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+12	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-205.149.5.1.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+12	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+13	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-10	__down_common	4 stacks
+2	__down_common	4 stacks
+14	__down_common	3 stacks
+15	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-13	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+12	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-204.147.6.3.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+12	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+13	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-10	__down_common	4 stacks
+2	__down_common	4 stacks
+14	__down_common	3 stacks
+15	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-13	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+12	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-204.147.6.2.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+12	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+13	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-10	__down_common	4 stacks
+2	__down_common	4 stacks
+14	__down_common	3 stacks
+15	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-13	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+12	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-203.146.5.1.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+12	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+13	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-10	__down_common	4 stacks
+2	__down_common	4 stacks
+14	__down_common	3 stacks
+15	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-13	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+12	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-202.135.2.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+12	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+13	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-10	__down_common	4 stacks
+2	__down_common	4 stacks
+14	__down_common	3 stacks
+15	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-13	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+12	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-201.135.6.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+12	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+13	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-10	__down_common	4 stacks
+2	__down_common	4 stacks
+14	__down_common	3 stacks
+15	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-13	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+12	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-200.131.27.1.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+12	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+13	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-10	__down_common	4 stacks
+2	__down_common	4 stacks
+14	__down_common	3 stacks
+15	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-13	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+12	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-200.131.27.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+12	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+13	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-10	__down_common	4 stacks
+2	__down_common	4 stacks
+14	__down_common	3 stacks
+15	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-13	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+12	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-106.131.4.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+12	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+13	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-10	__down_common	4 stacks
+2	__down_common	4 stacks
+14	__down_common	3 stacks
+15	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-13	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+12	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-105.125.6.2.2.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+12	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+13	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-10	__down_common	4 stacks
+2	__down_common	4 stacks
+14	__down_common	3 stacks
+15	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-13	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+12	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-105.125.6.2.1.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-10	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+12	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+13	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-10	__down_common	4 stacks
+2	__down_common	4 stacks
+14	__down_common	3 stacks
+15	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-13	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+12	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+14	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-105.125.6.2.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-3	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+22	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-104.119.4.2.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-3	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+22	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-103.114.4.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-3	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+22	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-102.110.5.1.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-3	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+22	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-102.110.5.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-3	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+22	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-101.103.2.1.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-3	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+22	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-100.96.32.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-1	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+20	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-8.91.4.1.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-1	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+20	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-7.86.6.1.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-1	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+20	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-6.80.3.1.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-1	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+20	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-5.76.5.1.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-1	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+20	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-4.70.5.2.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-1	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+20	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-3.60.5.1.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-1	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+20	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-2.52.3.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-1	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+20	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-1.43.4.2.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-1	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+20	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-1.43.4.1.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-1	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+20	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-0.30.20.1.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-1	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+20	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-0.30.20.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-1	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+20	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
+--> 5.15.0-0.30.19.el9uek.aarch64
+   -> mutex (saw 8 stacks)
+-4	__mutex_lock.constprop.0	8 stacks
+2	__mutex_lock.constprop.0	8 stacks
+18	__mutex_lock.constprop.0	4 stacks
+3	__mutex_lock.constprop.0	2 stacks
+19	__mutex_lock.constprop.0	2 stacks
+   -> sem (saw 4 stacks)
+-16	__down_common	4 stacks
+2	__down_common	4 stacks
+20	__down_common	3 stacks
+21	__down_common	1 stacks
+   -> rwsem (saw 9 stacks)
+-1	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_read_slowpath	5 stacks
+2	rwsem_down_write_slowpath	4 stacks
+20	rwsem_down_read_slowpath	3 stacks
+3	rwsem_down_read_slowpath	2 stacks
+3	rwsem_down_write_slowpath	2 stacks
+24	rwsem_down_write_slowpath	2 stacks
