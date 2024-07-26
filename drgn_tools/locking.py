@@ -4,14 +4,20 @@
 Helper for linux kernel locking
 """
 import enum
+import warnings
 from typing import Iterable
+from typing import Optional
 from typing import Tuple
 
 import drgn
+from drgn import Architecture
 from drgn import cast
+from drgn import FaultError
+from drgn import IntegerLike
 from drgn import NULL
 from drgn import Object
 from drgn import Program
+from drgn import StackFrame
 from drgn.helpers.linux.list import list_empty
 from drgn.helpers.linux.list import list_for_each_entry
 from drgn.helpers.linux.percpu import per_cpu
@@ -20,6 +26,7 @@ from drgn.helpers.linux.sched import task_cpu
 from drgn.helpers.linux.sched import task_state_to_char
 
 from drgn_tools.bt import bt
+from drgn_tools.debuginfo import KernelVersion
 from drgn_tools.table import FixedTable
 from drgn_tools.task import get_current_run_time
 from drgn_tools.task import task_lastrun2now
@@ -519,3 +526,206 @@ def get_rwsem_info(rwsem: Object, callstack: int = 0) -> None:
         print("There are no waiters")
     else:
         get_rwsem_waiters_info(rwsem, callstack)
+
+
+# Maps (OL version, UEK version, architecture) to a dictionary that maps
+# function symbols to a list of possible offsets where the relevant lock may be
+# stored on the stack, relative to the stack pointer (on x86_64) or the frame
+# pointer (on aarch64).
+#
+# To be clear, it's not generally possible to hardcode a stack offset for a
+# local variable. Commonly, the variable is stored in a register (and it may be
+# moved during the execution of the function), and that register will be saved
+# by a callee. So the location of a variable will depend on (at least) the
+# current location in the function code, as well as the set of callees on the
+# stack.
+#
+# The only reason that it's possible for us to hardcode the offsets here is that
+# we only care about one possible callee state: the state where the thread is in
+# the schedule() function and is asleep waiting for the lock. Since there's
+# typically only one callee state where this happens, we can generally narrow it
+# down to one or two stack offsets.
+#
+# However, this can change over the course of a kernel release. If the code of
+# the schedule() function, or any of the lock functions changes, the compiler
+# may generate new code that results in different register allocations,
+# different stack frame sizes, etc... and thus different stack offsets. We've
+# manually tested nearly every released UEK kernel to find these stack offsets
+# and put them into a list for each function. Since we have the ability to
+# detect whether the lock is actually valid, we can test each of the stack
+# offsets and find the correct one.
+#
+# This is quite fragile, and it's what DWARF CFI is really supposed to help us
+# with. But for the cases where we're using CTF, it seems reasonable to
+# hard-code a few dozen offsets that we especially care about. After all, that's
+# pretty compact: far more compact than DWARF CFI would be :)
+_LOCK_OFFSETS = {
+    (7, 4, "x86_64"): {
+        "__mutex_lock_interruptible_slowpath": [-5],
+        "__mutex_lock_slowpath": [-5],
+        "__mutex_lock_killable_slowpath": [-5],
+        "__down_common": [-6],
+        "rwsem_down_write_failed": [-3],
+        "rwsem_down_read_failed": [-4],
+    },
+    (7, 5, "x86_64"): {
+        "__mutex_lock.isra.5": [-8],
+        "__down_common": [-7],
+        "rwsem_down_write_failed_killable": [-7],
+        "rwsem_down_write_failed": [-9],
+        "rwsem_down_read_failed": [-9],
+        "rwsem_down_read_failed_killable": [-9],
+    },
+    (7, 6, "x86_64"): {
+        "__mutex_lock.isra.11": [-9],
+        "__mutex_lock.isra.10": [-9, -10],
+        "__down_common": [-7],
+        "rwsem_down_read_slowpath": [-4],
+        "rwsem_down_write_slowpath": [-9, -3],
+    },
+    (8, 6, "x86_64"): {
+        "__mutex_lock.isra.8": [-5],
+        "__down": [-7],
+        "__down_interruptible": [-7],
+        "__down_killable": [-7],
+        "__down_timeout": [-7],
+        "rwsem_down_read_slowpath": [-3],
+        "rwsem_down_write_slowpath": [-6],
+    },
+    (8, 6, "aarch64"): {
+        "__mutex_lock.isra.9": [2],
+        "__down": [2],
+        "__down_interruptible": [2],
+        "__down_killable": [2],
+        "__down_timeout": [2],
+        "rwsem_down_read_slowpath": [2],
+        "rwsem_down_write_slowpath": [2],
+    },
+    (8, 7, "x86_64"): {
+        "__mutex_lock.constprop.0": [-1],
+        "__down_common": [-20],
+        "rwsem_down_read_slowpath": [-7, -8],
+        "rwsem_down_write_slowpath": [-7, -5],
+    },
+    (8, 7, "aarch64"): {
+        "__mutex_lock.constprop.0": [2],
+        "__down_common": [2],
+        "rwsem_down_read_slowpath": [2],
+        "rwsem_down_write_slowpath": [2],
+    },
+    (9, 7, "x86_64"): {
+        "__mutex_lock.constprop.0": [-6],
+        "__down_common": [-20],
+        "rwsem_down_read_slowpath": [-7, -8],
+        "rwsem_down_write_slowpath": [-7, -5],
+    },
+    (9, 7, "aarch64"): {
+        "__mutex_lock.constprop.0": [2],
+        "__down_common": [2],
+        "rwsem_down_read_slowpath": [2],
+        "rwsem_down_write_slowpath": [2],
+    },
+}
+
+
+def is_task_blocked_on_lock(
+    pid: IntegerLike, lock_type: str, lock: Object
+) -> bool:
+    """
+    Check if a task is blocked on a given lock or not
+    :param pid: PID of task
+    :param var_name: variable name (sem, or mutex)
+    :param lock: ``struct mutex *`` or ``struct semaphore *`` or ``struct rw_semaphore *``
+    :returns: True if task is blocked on given lock, False otherwise.
+    """
+
+    try:
+        if lock_type == "semaphore" or lock_type == "rw_semaphore":
+            return pid in [
+                waiter.pid.value_()
+                for waiter in for_each_rwsem_waiter(lock.prog_, lock)
+            ]
+        elif lock_type == "mutex":
+            return pid in [
+                waiter.pid.value_()
+                for waiter in for_each_mutex_waiter(lock.prog_, lock)
+            ]
+        else:
+            return False
+    except FaultError:
+        # print("Could not retrieve list of waiters.")
+        return False
+
+
+def get_lock_from_frame(
+    prog: Program, pid: IntegerLike, frame: StackFrame, kind: str, var: str
+) -> Optional[Object]:
+    """
+    Given a stack frame, try to get the relevant lock out of it.
+
+    :param pid: process ID of the task associated with the stack frame
+    :param frame: the stack frame in question
+    :param kind: the kind of lock (mutex, rw_semaphore, semaphore)
+    :param var: the variable name within the stack frame
+    :returns: an object of the appropriacet type for the lock kind. If it could
+      not be found, returns None
+    """
+    # Try to use DWARF CFI to get the variable value. This is the most
+    # straightforward method to get the lock variable.
+    try:
+        lock = frame[var]
+        if not lock.absent_:
+            return lock
+    except (drgn.ObjectAbsentError, KeyError):
+        pass
+
+    # For supported kernels we have a table of offsets. See the comment above
+    # the table for details on its generation and complexities of its use.
+    offsets = prog.cache.get("drgn_tools.lock.offsets", "not found")
+    if offsets is None:
+        # To avoid constantly re-parsing the kernel version in the case of a
+        # true positive, we store "None" into the cache to cache a true
+        # positive. Short circuit and return here.
+        return None
+    elif offsets == "not found":
+        rel = prog["UTS_RELEASE"].string_().decode()
+        kver = KernelVersion.parse(rel)
+        key = (kver.ol_version, kver.uek_version, kver.arch)
+        offsets = _LOCK_OFFSETS.get(key)  # type: ignore
+        prog.cache["drgn_tools.lock.offsets"] = offsets
+        if not offsets:
+            warnings.warn(f"lock: Unknown kernel {rel}, no fallback offsets")
+            return None
+
+    # Our tables of offsets are not indexed by their source function name (as
+    # the frame.name reported by DWARF). They are instead indexed by the symbol
+    # name, which we have available for DWARF and CTF. Be sure to get the symbol
+    # name, not the DWARF function name.
+    try:
+        sym_name = frame.symbol().name
+    except LookupError:
+        sym_name = None
+    if sym_name not in offsets:
+        warnings.warn(
+            f"lock: PC {frame.pc} symbol {sym_name} not found in fallback offsets"
+        )
+        return None
+
+    tp = prog.type(f"struct {kind} *")
+
+    # Test each offset until we find the correct one. It really is that simple.
+    for offset in offsets[sym_name]:
+        # Due to the nature of frame pointer unwinding on aarch64, we do not
+        # have the stack pointer whenever we are using CTF. So, our offsets are
+        # relative to the frame pointer, not the stack pointer.
+        if prog.platform.arch == Architecture.AARCH64:
+            base = frame.register("fp")
+        else:
+            base = frame.sp
+        # We do not support a 32-bit kernel, let's just fudge it here and be
+        # 64-bit specific.
+        addr = base + 8 * offset
+        lock = Object(prog, tp, value=prog.read_u64(addr))
+        if is_task_blocked_on_lock(pid, kind, lock):
+            return lock
+    return None

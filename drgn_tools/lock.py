@@ -32,7 +32,6 @@ from typing import Optional
 from typing import Set
 from typing import Tuple
 
-import drgn
 from drgn import Object
 from drgn import Program
 from drgn import StackFrame
@@ -47,6 +46,7 @@ from drgn_tools.locking import _RWSEM_READER_MASK
 from drgn_tools.locking import _RWSEM_READER_SHIFT
 from drgn_tools.locking import for_each_mutex_waiter
 from drgn_tools.locking import for_each_rwsem_waiter
+from drgn_tools.locking import get_lock_from_frame
 from drgn_tools.locking import get_rwsem_owner
 from drgn_tools.locking import get_rwsem_spinners_info
 from drgn_tools.locking import mutex_owner
@@ -120,32 +120,35 @@ def scan_mutex_lock(
     if pid is not None:
         wtask = find_task(prog, pid)
 
-    frame_list = bt_has_any(prog, ["__mutex_lock"])
+    frame_list = bt_has_any(
+        prog,
+        [
+            "__mutex_lock",
+            "__mutex_lock_interruptible_slowpath",
+            "__mutex_lock_slowpath",
+            "__mutex_lock_killable_slowpath",
+            "__mutex_lock.isra.5",
+            "__mutex_lock.isra.11",
+            "__mutex_lock.isra.10",
+            "__mutex_lock.constprop.0",
+        ],
+    )
     if not frame_list:
         return
 
     seen_mutexes: Set[int] = set()
 
-    warned_absent = False
     for task, frame in frame_list:
-        try:
-            mutex = frame["lock"]
-            mutex_addr = mutex.value_()
-        except drgn.ObjectAbsentError:
-            if not warned_absent:
-                print(
-                    "warning: failed to get mutex from stack frame"
-                    "- information is incomplete"
-                )
-                warned_absent = True
+        this_pid = task.pid.value_()
+        mutex = get_lock_from_frame(prog, this_pid, frame, "mutex", "lock")
+        if not mutex:
             continue
-
-        struct_owner = mutex_owner(prog, mutex)
-
+        mutex_addr = mutex.value_()
         if mutex_addr in seen_mutexes:
             continue
         seen_mutexes.add(mutex_addr)
 
+        struct_owner = mutex_owner(prog, mutex)
         index = 0
         print(f"Mutex: 0x{mutex_addr:x}")
         print(
@@ -189,25 +192,17 @@ def show_sem_lock(
     pid: Optional[int] = None,
 ) -> None:
     """Show semaphore details"""
-    warned_absent = False
     wtask = None
 
     if pid is not None:
         wtask = find_task(prog, pid)
 
     for task, frame in frame_list:
-        try:
-            sem = frame["sem"]
-            semaddr = sem.value_()
-        except drgn.ObjectAbsentError:
-            if not warned_absent:
-                print(
-                    "warning: failed to get semaphore from stack frame"
-                    "- information is incomplete"
-                )
-                warned_absent = True
+        this_pid = task.pid.value_()
+        sem = get_lock_from_frame(prog, this_pid, frame, "semaphore", "sem")
+        if not sem:
             continue
-
+        semaddr = sem.value_()
         if semaddr in seen_sems:
             continue
         seen_sems.add(semaddr)
@@ -244,25 +239,19 @@ def show_rwsem_lock(
     pid: Optional[int] = None,
 ) -> None:
     """Show rw_semaphore details"""
-    warned_absent = False
     wtask = None
 
     if pid is not None:
         wtask = find_task(prog, pid)
 
     for task, frame in frame_list:
-        try:
-            rwsem = frame["sem"]
-            rwsemaddr = rwsem.value_()
-        except drgn.ObjectAbsentError:
-            if not warned_absent:
-                print(
-                    "warning: failed to get rwsemaphore from stack frame"
-                    "- information is incomplete"
-                )
-                warned_absent = True
+        this_pid = task.pid.value_()
+        rwsem = get_lock_from_frame(
+            prog, this_pid, frame, "rw_semaphore", "sem"
+        )
+        if not rwsem:
             continue
-
+        rwsemaddr = rwsem.value_()
         if rwsemaddr in seen_rwsems:
             continue
         seen_rwsems.add(rwsemaddr)
@@ -359,7 +348,11 @@ def scan_rwsem_lock(
     functions = [
         "__rwsem_down_write_failed_common",
         "__rwsem_down_read_failed_common",
+        "rwsem_down_write_failed",
+        "rwsem_down_write_failed_killable",
         "rwsem_down_write_slowpath",
+        "rwsem_down_read_failed",
+        "rwsem_down_read_failed_killable",
         "rwsem_down_read_slowpath",
     ]
     frame_list = bt_has_any(prog, functions, wtask)
@@ -391,7 +384,6 @@ class Locking(CorelensModule):
     """Display active mutex and semaphores and their waiters"""
 
     name = "lock"
-    need_dwarf = True
 
     def add_args(self, parser: argparse.ArgumentParser) -> None:
         parser.add_argument(
