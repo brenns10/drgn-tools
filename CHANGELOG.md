@@ -48,6 +48,8 @@ Unreleased
 
 Changes which are committed to git, but not yet released, may appear here.
 
+* Fixed missing RPM dependency on drgn in OL8 [Orabug: 37126732]
+
 1.1.0 - Tue, Aug 27, 2023
 -------------------------
 
