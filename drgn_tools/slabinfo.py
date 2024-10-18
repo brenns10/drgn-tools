@@ -79,17 +79,21 @@ def _slab_type(prog: Program) -> Type:
     # slab by spatch"), merged in 5.17, we use "struct slab" rather than "struct
     # page" throughout the slab subsystem. This helper, and _has_struct_slab()
     # below, help us to make that change mostly invisible.
-    try:
+    if _has_struct_slab(prog):
         return prog.type("struct slab *")
-    except LookupError:
+    else:
         return prog.type("struct page *")
 
 
 def _has_struct_slab(prog: Program) -> bool:
     if "has_struct_slab" not in prog.cache:
         try:
-            prog.type("struct slab")
-            prog.cache["has_struct_slab"] = True
+            slab_tp = prog.type("struct slab")
+            # On UEK4, there's actually a struct slab type that exists. It's a
+            # partially defined type, referenced only via pointer. But that's
+            # enough for the UEK4 CTF to report a "struct slab" type with no
+            # members. Check for that below so the helper still works on UEK4.
+            prog.cache["has_struct_slab"] = len(slab_tp.members) != 0
         except LookupError:
             prog.cache["has_struct_slab"] = False
     return prog.cache["has_struct_slab"]
