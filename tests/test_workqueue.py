@@ -2,7 +2,6 @@
 # Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl/
 import drgn
 from drgn.helpers.linux.cpumask import for_each_online_cpu
-from drgn.helpers.linux.percpu import per_cpu
 from drgn.helpers.linux.percpu import per_cpu_ptr
 from drgn.helpers.linux.pid import for_each_task
 
@@ -29,8 +28,10 @@ def test_for_each_workqueue(prog: drgn.Program) -> None:
 
 
 def test_for_each_pool(prog: drgn.Program) -> None:
-    cpu0_normal_pool = per_cpu(prog["cpu_worker_pools"], 0)[0].address_of_()
-    cpu0_highprio_pool = per_cpu(prog["cpu_worker_pools"], 0)[1].address_of_()
+    # See the comment in _cpu_worker_pools
+    cpu0_pools = wq._cpu_worker_pools(prog, 0)
+    cpu0_normal_pool = cpu0_pools[0].address_of_()
+    cpu0_highprio_pool = cpu0_pools[1].address_of_()
     all_pools = [pool for pool in wq.for_each_pool(prog)]
     assert cpu0_normal_pool in all_pools
     assert cpu0_highprio_pool in all_pools
@@ -49,25 +50,20 @@ def test_for_each_worker(prog: drgn.Program) -> None:
 
 
 def test_for_each_pool_worker(prog: drgn.Program) -> None:
-    test_pool = per_cpu(prog["cpu_worker_pools"], 0)[0].address_
+    test_pool = wq._cpu_worker_pools(prog, 0)[0].address_of_()
     kworkers = [
         workers.value_()
         for workers in wq.for_each_worker(prog)
-        if workers.pool.value_() == test_pool
+        if workers.pool.value_() == test_pool.value_()
     ]
     pool_kworkers = [
-        workers.value_()
-        for workers in wq.for_each_pool_worker(
-            per_cpu(prog["cpu_worker_pools"], 0)[0].address_of_()
-        )
+        workers.value_() for workers in wq.for_each_pool_worker(test_pool)
     ]
     assert kworkers.sort() == pool_kworkers.sort()
 
 
 def test_for_each_cpu_worker_pool(prog: drgn.Program) -> None:
-    cpu0_worker_pools = [
-        per_cpu(prog["cpu_worker_pools"], 0)[i].address_ for i in [0, 1]
-    ]
+    cpu0_worker_pools = [p.address_ for p in wq._cpu_worker_pools(prog, 0)]
     worker_pools = [
         worker_pool.value_()
         for worker_pool in wq.for_each_cpu_worker_pool(prog, 0)
@@ -92,7 +88,7 @@ def test_for_each_pending_work_on_cpu(prog: drgn.Program) -> None:
 
 
 def test_for_each_pending_work_in_pool(prog: drgn.Program) -> None:
-    pool = per_cpu(prog["cpu_worker_pools"], 0)[0].address_of_()
+    pool = wq._cpu_worker_pools(prog, 0)[0].address_of_()
     for work in wq.for_each_pending_work_in_pool(pool):
         pass
 

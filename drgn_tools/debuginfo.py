@@ -802,5 +802,20 @@ def _main():
         print(module_path)
 
 
+def kver(prog: "Program") -> Optional[KernelVersion]:
+    """
+    Return the parsed kernel version, cached.
+    Since parsing could fail, it's possible to return None.
+    """
+    if "drgn_tools.kver" not in prog.cache:
+        try:
+            prog.cache["drgn_tools.kver"] = KernelVersion.parse(
+                prog["UTS_RELEASE"].string_().decode()
+            )
+        except Exception:
+            prog.cache["drgn_tools.kver"] = None
+    return prog.cache["drgn_tools.kver"]
+
+
 if __name__ == "__main__":
     _main()

@@ -7,6 +7,7 @@ Workqueue
 The ``drgn.helpers.linux.workqueue`` module provides helpers for working with the
 Linux workqueues.
 """
+import math
 from typing import Iterator
 from typing import Optional
 from typing import Union
@@ -16,6 +17,7 @@ from drgn import IntegerLike
 from drgn import NULL
 from drgn import Object
 from drgn import Program
+from drgn import reinterpret
 from drgn.helpers.common.format import escape_ascii_string
 from drgn.helpers.linux.idr import idr_find
 from drgn.helpers.linux.idr import idr_for_each
@@ -25,6 +27,8 @@ from drgn.helpers.linux.list import list_for_each_entry
 from drgn.helpers.linux.percpu import per_cpu
 from drgn.helpers.linux.percpu import per_cpu_ptr
 from drgn.helpers.linux.pid import find_task
+
+from drgn_tools.debuginfo import kver
 
 
 __all__ = (
@@ -188,6 +192,24 @@ def for_each_pwq(workqueue: Object) -> Iterator[Object]:
     )
 
 
+def _cpu_worker_pools(prog: Program, cpu: int) -> Object:
+    worker_pool_list = per_cpu(prog["cpu_worker_pools"], cpu)
+    ver = kver(prog)
+    if ver and ver.uek_version == 4:
+        # NOTE: This is a horrible hack, and we can remove it in the future. The
+        # UEK 4 CTF seems to have a bug in which the "worker_pool" structure has
+        # an incorrect size: it is marked cacheline aligned, but the CTF does
+        # not include the trailing padding. This isn't normally an issue, except
+        # that for indexing into arrays, that padding is necessary. So let's
+        # manually pad out the structure to the cacheline size of 64 bytes.
+        tp = prog.type("struct worker_pool")
+        padded_size = math.ceil(tp.size / 64) * 64
+        fixed_type = prog.struct_type("worker_pool", padded_size, tp.members)
+        array_type = prog.array_type(fixed_type, len(worker_pool_list))
+        worker_pool_list = reinterpret(array_type, worker_pool_list)
+    return worker_pool_list
+
+
 def for_each_cpu_worker_pool(prog: Program, cpu: int) -> Iterator[Object]:
     """
     Iterate over all worker_pool(s) of a CPU
@@ -195,8 +217,7 @@ def for_each_cpu_worker_pool(prog: Program, cpu: int) -> Iterator[Object]:
     :param cpu: cpu number
     :returns: Iterator of ``struct worker_pool *`` objects.
     """
-    worker_pool_list = per_cpu(prog["cpu_worker_pools"], cpu)
-    for worker_pool in worker_pool_list:
+    for worker_pool in _cpu_worker_pools(prog, cpu):
         yield worker_pool.address_of_()
 
 
