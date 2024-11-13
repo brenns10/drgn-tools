@@ -491,7 +491,12 @@ def bt(
             print(f"Task is in state: {state} - cannot unwind")
             return []
 
-    traces = expand_traces(task.prog_.stack_trace(task))
+    try:
+        traces = expand_traces(task.prog_.stack_trace(task))
+    except LookupError as e:
+        # registers for CPU X were not saved
+        print(" " * indent + "error: " + str(e))
+        return []
     print_traces(
         traces, show_vars=show_vars, show_absent=show_absent, indent=indent
     )

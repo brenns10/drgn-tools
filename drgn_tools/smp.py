@@ -48,7 +48,13 @@ def _irq_enabled(prog, cpu) -> bool:
 
     """
     _X86_EFLAGS_TF = 1 << 9
-    frames = bt_frames(prog, cpu=cpu)
+    try:
+        frames = bt_frames(prog, cpu=cpu)
+    except LookupError as e:
+        print(
+            f"error: cannot determine whether IRQs are enabled on CPU {cpu}: {str(e)}"
+        )
+        return True
     ret = False
     for frame in frames:
         # panic() disables irq anyways, so we don't want to check
