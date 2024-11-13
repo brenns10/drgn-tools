@@ -262,7 +262,7 @@ def dump_smp_ipi_objects(prog: drgn.Program) -> None:
         pass
 
 
-def dump_smp_ipi_state(prog: drgn.Program) -> None:
+def dump_smp_ipi_state(prog: drgn.Program, stacks: bool = True) -> None:
     """
     Dump state of SMP IPI subsystem
 
@@ -289,15 +289,14 @@ def dump_smp_ipi_state(prog: drgn.Program) -> None:
 
         llist = "llist" if csd_type.has_member("llist") else "node.llist"
 
+        src_cpus = []
+        print(f"CPU: {cpu} has pending CSD requests:")
         for csd in llist_for_each_entry(csd_type, csq.first, llist):
             if csd_type.has_member("src"):
                 src = csd.src.value_()
             else:
                 src = csd.node.src.value_()
-            print(f"\ncpu: {cpu} has pending csd requests from cpu:", src)
-
-            print("\nCall stack at source cpu: ", src)
-            bt(prog, cpu=src)
+            src_cpus.append(src)
             waiter_task = cpu_curr(prog, src)
             wait_time_ns = task_lastrun2now(waiter_task)
             wait_time_s = nanosecs_to_secs(wait_time_ns)
@@ -306,16 +305,18 @@ def dump_smp_ipi_state(prog: drgn.Program) -> None:
             )
             waiter_pid = waiter_task.pid.value_()
             if not waiter_task.pid.value_():
-                print(
-                    "\nWaiter CPU is idle. Waiter of a csd lock can't be idle."
-                )
+                extra = "**BUG:** Waiter CPU is idle! Waiter of a csd lock can't be idle."
             else:
-                print(
-                    f'\ncsd lock waiter "{waiter_name}:{waiter_pid}" has been waiting for:{wait_time_s} secs.'
+                extra = (
+                    f"waiting {wait_time_s} secs, {waiter_name}:{waiter_pid}"
                 )
+            print(f"  SRC {src:3d} -> DST {cpu:3d}: {extra}")
+            if stacks:
+                print("  Stack trace at source:")
+                bt(prog, cpu=src, indent=4)
 
-        print("\nCall stack at destination cpu: ", cpu)
-        bt(prog, cpu=cpu)
+        print("Call stack at destination cpu: ", cpu)
+        bt(prog, cpu=cpu, indent=2)
         dst_task = cpu_curr(prog, cpu)
         run_time_ns = task_lastrun2now(dst_task)
         run_time_s = nanosecs_to_secs(run_time_ns)
@@ -333,19 +334,20 @@ def dump_smp_ipi_state(prog: drgn.Program) -> None:
 
         if not dst_task.pid.value_():
             print(
-                "\ndestination is idle. CSD destination should not be idle when there are pending CSD requests."
+                "destination is idle. CSD destination should not be idle when there are pending CSD requests."
             )
         else:
             print(
-                f'\ndestination state task: "{dst_task_name}:{dst_task_pid}" running for {run_time_s} secs with {irq_state}'
+                f'destination state task: "{dst_task_name}:{dst_task_pid}" running for {run_time_s} secs with {irq_state}'
             )
 
         rq_lag_ns = get_runq_lag(prog, cpu)
         rq_lag_s = nanosecs_to_secs(rq_lag_ns)
         if rq_lag_s:
             print(
-                f"\ndestination CPU's runq clock is lagging by {rq_lag_s} secs"
+                f"destination CPU's runq clock is lagging by {rq_lag_s} secs"
             )
+        print()
 
 
 class SmpIpiModule(CorelensModule):
@@ -355,5 +357,14 @@ class SmpIpiModule(CorelensModule):
 
     live_ok = False
 
+    def add_args(self, parser: argparse.ArgumentParser) -> None:
+        parser.add_argument(
+            "--stacks",
+            "-s",
+            action="store_true",
+            help="dump the stacks of all callers in addition to callees",
+        )
+        pass
+
     def run(self, prog: Program, args: argparse.Namespace) -> None:
-        dump_smp_ipi_state(prog)
+        dump_smp_ipi_state(prog, stacks=args.stacks)
