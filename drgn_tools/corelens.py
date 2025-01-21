@@ -27,7 +27,9 @@ from typing import Tuple
 
 from drgn import Program
 from drgn import ProgramFlags
+from drgn.cli import version_header as drgn_version_header
 
+from drgn_tools._version import __version__
 from drgn_tools.debuginfo import CtfCompatibility
 from drgn_tools.debuginfo import find_debuginfo
 from drgn_tools.debuginfo import KernelVersion
@@ -600,6 +602,17 @@ def _print_module_listing() -> None:
             print(" " * (maxlen), note)
 
 
+def _version_string() -> str:
+    try:
+        from drgn.helpers.linux.ctf import load_ctf  # noqa
+
+        ctf_str = "with CTF"
+    except ModuleNotFoundError:
+        ctf_str = "without CTF"
+
+    return f"drgn-tools {__version__}, {drgn_version_header()}, {ctf_str}"
+
+
 def main() -> None:
     corelens_begin_time = time.time()
     parser = argparse.ArgumentParser(
@@ -629,6 +642,12 @@ def main() -> None:
         "-L",
         action="store_true",
         help="list corelens module names",
+    )
+    parser.add_argument(
+        "--version",
+        "-V",
+        action="store_true",
+        help="print the version of corelens",
     )
     parser.add_argument(
         "--debuginfo",
@@ -663,6 +682,9 @@ def main() -> None:
     args = parser.parse_args(split_args[0])
     if args.list:
         _print_module_listing()
+        sys.exit(0)
+    elif args.version:
+        print(_version_string())
         sys.exit(0)
 
     # Load corelens modules before initializing prog, so that the argument
@@ -744,6 +766,7 @@ def main() -> None:
         def info_msg(*args, **kwargs):
             pass
 
+    info_msg(_version_string())
     kind = "CTF" if ctf else "DWARF"
     info_msg(f"Loaded {kind} debuginfo in in {load_time:.03f}s")
 
