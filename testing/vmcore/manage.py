@@ -58,7 +58,7 @@ def delete_orphans(client: ParClient):
             parent = parent.parent
 
 
-def upload_all(client: ParClient, core: str) -> None:
+def upload_files_for_core(client: ParClient, core: str) -> None:
     core_path = CORE_DIR / core
     vmlinux_path = core_path / "vmlinux"
     vmcore_path = core_path / "vmcore"
@@ -85,6 +85,14 @@ def upload_all(client: ParClient, core: str) -> None:
         with path.open("rb") as f:
             print(f"Upload: {key}")
             client.put_object(key, f)
+
+
+def upload_all_cores(client: ParClient) -> None:
+    for vmcore_dir in CORE_DIR.iterdir():
+        if not vmcore_dir.is_dir():
+            continue
+        print(f"Upload files for {vmcore_dir.name}")
+        upload_files_for_core(client, vmcore_dir.name)
 
 
 def main():
@@ -138,8 +146,9 @@ def main():
             delete_orphans(client)
     elif args.action == "upload":
         if not args.upload_core:
-            sys.exit("error: --upload-core is required for upload operation")
-        upload_all(client, args.upload_core)
+            upload_all_cores(client)
+        else:
+            upload_files_for_core(client, args.upload_core)
 
 
 if __name__ == "__main__":
