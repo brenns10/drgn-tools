@@ -105,5 +105,8 @@ setup(
             "DRGN=drgn_tools.cli:main",
             "corelens=drgn_tools.corelens:main",
         ],
+        "drgn.plugins": [
+            "oracle=drgn_tools.plugin",
+        ]
     },
 )
