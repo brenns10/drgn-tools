@@ -17,6 +17,7 @@ drgn or drgn-tools or third-party modules.
 """
 import abc
 import argparse
+import atexit
 import enum
 import itertools
 import os
@@ -131,6 +132,14 @@ class VmlinuxRepoFetcher(DebuginfoFetcher):
         ]
 
 
+def _cleanup_file_at_exit(path: Path):
+    # TODO: Python 3.8 introduces missing_ok=True to Path.unlink().
+    # Once we drop Python 3.6 support we can simply do:
+    #     atexit.register(path.unlink, missing_ok=True)
+    if path.is_file():
+        path.unlink()
+
+
 class OracleLinuxYumFetcher(DebuginfoFetcher):
     """
     A fetcher which downloads from oss.oracle.com Yum server
@@ -193,14 +202,19 @@ class OracleLinuxYumFetcher(DebuginfoFetcher):
                 )
                 return {}
             f.flush()
-            out_dir.mkdir(parents=True, exist_ok=True)
-            path = Path(f.name)
-            if self.rpm_cache:
-                cached.parent.mkdir(exist_ok=True, parents=True)
-                shutil.move(str(path), str(cached))
-                path.touch()  # prevent error in unlink
-                path = cached
-            return extract_rpm(path, out_dir, modules)
+            # Place the RPM in the "rpms" directory once it is fully downloaded.
+            # Leave it there forever if "rpm_cache=true", otherwise register an
+            # atexit handler to clean it up. This is important because we may
+            # need to extract kernel modules once we have the vmlinux. Caching
+            # the RPM for the duration of the process ensures that we don't
+            # re-download the RPM.
+            cached.parent.mkdir(exist_ok=True, parents=True)
+            tmp_path = Path(f.name)
+            shutil.move(str(tmp_path), str(cached))
+            tmp_path.touch()  # prevent error in unlink
+            if not self.rpm_cache:
+                atexit.register(_cleanup_file_at_exit, cached)
+            return extract_rpm(cached, out_dir, modules)
 
     def output_directories(self) -> List[Path]:
         return [self.out_dir]
